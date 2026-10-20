@@ -6,7 +6,7 @@ My accepted solutions from LeetCode, Codeforces, AtCoder, CSES and more.
 
 Synced automatically by SolveSync.
 
-**Total solved:** 10
+**Total solved:** 15
 
 ## Codeforces
 
@@ -54,11 +54,11 @@ Solutions organized by difficulty rating.
 
 Solutions organized by contest type.
 
-**Solved:** 0
+**Solved:** 5
 
 | Contest type | Solved |
 | --- | --- |
-| — | 0 |
+| ABC | 5 |
 
 ## Repovive
 
