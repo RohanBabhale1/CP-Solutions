@@ -1,0 +1,41 @@
+# 0204 · Count Primes
+
+**Platform:** LeetCode &nbsp;|&nbsp; **Difficulty:** Medium &nbsp;|&nbsp; [Problem link](https://leetcode.com/problems/count-primes/)
+
+**Topics:** `Array` `Math` `Enumeration` `Number Theory` `Primality Test` `Sieve Theory` `Prime Number Sieve`
+
+## Accepted solutions
+
+| Language | Runtime | Memory | Date | Submission |
+| --- | --- | --- | --- | --- |
+| [C++](./solution.cpp) | 159 ms | 12.6 MB | 2026-05-20 | [link](https://leetcode.com/submissions/detail/2008105372/) |
+
+## Problem
+
+Given an integer `n`, return *the number of prime numbers that are strictly less than* `n`.
+
+**Example 1:**
+
+```
+Input: n = 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+```
+
+**Example 2:**
+
+```
+Input: n = 0
+Output: 0
+```
+
+**Example 3:**
+
+```
+Input: n = 1
+Output: 0
+```
+
+**Constraints:**
+
+	- `0 <= n <= 5 * 10^6`
