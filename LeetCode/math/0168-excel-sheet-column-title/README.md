@@ -1,0 +1,53 @@
+# 0168 · Excel Sheet Column Title
+
+**Platform:** LeetCode &nbsp;|&nbsp; **Difficulty:** Easy &nbsp;|&nbsp; [Problem link](https://leetcode.com/problems/excel-sheet-column-title/)
+
+**Topics:** `Math` `String`
+
+## Accepted solutions
+
+| Language | Runtime | Memory | Date | Submission |
+| --- | --- | --- | --- | --- |
+| [C++](./solution.cpp) | 0 ms | 7.7 MB | 2026-05-12 | [link](https://leetcode.com/submissions/detail/2001266982/) |
+
+## Problem
+
+Given an integer `columnNumber`, return *its corresponding column title as it appears in an Excel sheet*.
+
+For example:
+
+```
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28
+...
+```
+
+**Example 1:**
+
+```
+Input: columnNumber = 1
+Output: "A"
+```
+
+**Example 2:**
+
+```
+Input: columnNumber = 28
+Output: "AB"
+```
+
+**Example 3:**
+
+```
+Input: columnNumber = 701
+Output: "ZY"
+```
+
+**Constraints:**
+
+	- `1 <= columnNumber <= 2^31 - 1`
