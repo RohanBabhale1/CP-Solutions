@@ -1,0 +1,19 @@
+long long lo = max(sa, sb), hi = 4e14;
+        while (lo < hi) {
+            long long T = (lo + hi) / 2, E = T - sb;
+            int k = upper_bound(cost.begin(), cost.end(), E) - cost.begin();
+            long long rem = E - cost[k - 1], base = b[k - 1] + rem / k, r = rem % k;
+            long long cm = 0, cw = 0;
+            bool ok = true;
+            for (int i = 0; i < n && ok; i++) {
+                cm += a[i] + (i == 0 ? T - sa : 0);
+                if (i < n - k) cw += b[n - 1 - i];
+                else cw += base + (i - (n - k) < r);
+                if (cm < cw) ok = false;
+            }
+            if (ok) hi = T;
+            else lo = T + 1;
+        }
+        printf("%lld\n", lo);
+    }
+}

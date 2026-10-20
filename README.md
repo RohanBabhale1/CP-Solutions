@@ -6,7 +6,7 @@ My accepted solutions from LeetCode, Codeforces, AtCoder, CSES and more.
 
 Synced automatically by SolveSync.
 
-**Total solved:** 421
+**Total solved:** 422
 
 ## Codeforces
 
@@ -186,11 +186,11 @@ Solutions organized by contest type.
 
 Solutions from Repovive contests and practice.
 
-**Solved:** 0
+**Solved:** 1
 
 | Contest | Solved |
 | --- | --- |
-| — | 0 |
+| contest-27 | 1 |
 
 *Last updated: 2026-10-20*
 <!-- solvesync:end -->
