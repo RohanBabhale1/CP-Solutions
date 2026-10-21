@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
@@ -10,13 +7,3 @@ typedef vector<ll> vll;
 typedef vector<char> vc;
 typedef vector<string> vs;
 typedef map<int, int> mii;
-typedef set<int> si;
-typedef set<char> sc;
-
-#define fo(i,s,e) for(long long int i=s;i<e;i++)
-#define foru(a) for(auto &u:a)
-#define pb push_back
-#define f first
-#define s second
-#define sp <<" "<<
-#define MOD 1000000007

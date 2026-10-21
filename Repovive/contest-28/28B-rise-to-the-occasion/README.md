@@ -6,4 +6,4 @@
 
 | Language | Runtime | Memory | Date | Submission |
 | --- | --- | --- | --- | --- |
-| [C++](./solution.cpp) | — | — | 2026-10-20 | [link](https://repovive.com/contests/28/results) |
+| [C++ 23](./solution.cpp) | 41 ms | 2.5 MB | 2026-10-20 | [link](https://repovive.com/contests/28/results) |
