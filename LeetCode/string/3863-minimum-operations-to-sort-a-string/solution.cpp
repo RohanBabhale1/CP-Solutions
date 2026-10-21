@@ -1,17 +1,34 @@
-#define all(a) (a).begin(),(a).end()
 class Solution {
 public:
-    int minOperations(string s) {
-        string sorted = s;
-        sort(all(sorted));
-        if(s == sorted) return 0;
+    int minOperations(const string &s) {
+        bool isSorted = is_sorted(s.begin(), s.end());
 
-        int n = s.length();
-        if(n == 2) return -1;
-        if(s[0] == sorted[0] || s[n-1] == sorted[n-1]) return 1;
-        if(count(all(s), sorted[n-1]) == 1 && s[0] == sorted[n-1] &&
-           count(all(s), sorted[0]) == 1 && s[n-1] == sorted[0]) 
-           return 3;
-        return 2;
+        if (isSorted) {
+            return 0;
+        }
+
+        long long n=s.size();
+    
+        if (n == 2) {
+            return -1;
+        }
+
+        char minVal = s[0], maxVal = s[0];
+        for (char ch : s) {
+            minVal = min(minVal, ch);
+            maxVal = max(maxVal, ch);
+        }
+
+        if (s[0] == minVal || s[n - 1] == maxVal) {
+            return 1;
+        }
+
+        for (int i = 1; i < n - 1; i++) {
+            if (s[i] == minVal || s[i] == maxVal) {
+                return 2;
+            }
+        }
+
+        return 3;
     }
 };
