@@ -67,7 +67,7 @@ void yes() { cout << "YES\n"; }
 void no() { cout << "NO\n"; }
  
 void solve() {
-    int n; cin >> n;
+    ll n; cin >> n;
     if(n==1){
         cout<<1;
         return;
