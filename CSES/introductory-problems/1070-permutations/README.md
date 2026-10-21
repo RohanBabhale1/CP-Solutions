@@ -6,7 +6,7 @@
 
 | Language | Runtime | Memory | Date | Submission |
 | --- | --- | --- | --- | --- |
-| [C++ (C++23)](./solution.cpp) | — | — | 2026-10-21 | [link](https://cses.fi/problemset/result/19139354/) |
+| [C++ (C++23)](./solution.cpp) | — | — | 2026-10-21 | [link](https://cses.fi/problemset/result/19139359/) |
 
 ## Problem
 

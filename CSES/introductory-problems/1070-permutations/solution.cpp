@@ -79,7 +79,7 @@ void solve() {
     vector<int>a;
     int i=1;
     int j=2;
-    while(a.size()!=n){
+    while((ll)a.size()!=n){
         if(n%2==1){
             if(i<=n){
                 a.pb(i);
