@@ -1,0 +1,12 @@
+if(a>=b){
+        if(b+max(c,d)==a+min(c,d)){
+            yes();
+            return;
+        }else{
+            no();
+            return;
+        }
+    }else{
+        if(b+min(c,d)==a+max(c,d)){
+            yes();
+            return;
