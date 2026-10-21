@@ -6,7 +6,7 @@ My accepted solutions from LeetCode, Codeforces, AtCoder, CSES and more.
 
 Synced automatically by SolveSync.
 
-**Total solved:** 432
+**Total solved:** 433
 
 ## Codeforces
 
@@ -47,11 +47,11 @@ Solutions organized by primary topic folder.
 
 Solutions from the CSES Problem Set, organized by section.
 
-**Solved:** 7
+**Solved:** 8
 
 | Section | Solved |
 | --- | --- |
-| introductory-problems | 7 |
+| introductory-problems | 8 |
 
 ## CodeChef
 
