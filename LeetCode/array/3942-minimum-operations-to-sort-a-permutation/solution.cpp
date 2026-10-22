@@ -1,16 +1,28 @@
 class Solution {
 public:
-    int minOperations(auto& A) {
-        int n = A.size();
-        int asc = 1, dsc = 1;
-        for (int i = 1; i < n; i++) {
-            asc += A[i] == (A[i - 1] + 1) % n;
-            dsc += A[i - 1] == (A[i] + 1) % n;
+    int minOperations(vector<int>& nums) {
+        const int n = nums.size();
+        if (n == 1) {
+            return 0;
         }
-        if (asc == n)
-        return A.front() ? min(n - A.front(), A.front() + 2) : 0;
-        if (dsc == n)
-        return min(n - A.back(), A.back()) + 1;
-        return -1;
+        const int start = find(nums.begin(), nums.end(), 0) - nums.begin();
+        bool asc = true;
+        bool desc = true;
+        for (int i = 1; i < n; i++) {
+            const int value = nums[(start + i) % n];
+            if (value != i) {
+                asc = false;
+            }
+            if (value != n - i) {
+                desc = false;
+            }
+            if (!asc && !desc) {
+                return -1;
+            }
+        }
+        if (asc) {
+            return min(start, n - start + 2);
+        }
+        return min(n - start, start + 2);
     }
 };
