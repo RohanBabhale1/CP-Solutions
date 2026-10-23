@@ -6,7 +6,7 @@ My accepted solutions from LeetCode, Codeforces, AtCoder, CSES and more.
 
 Synced automatically by SolveSync.
 
-**Total solved:** 444
+**Total solved:** 445
 
 ## Codeforces
 
@@ -24,11 +24,11 @@ Solutions by RohanBabhale1, organized by difficulty rating.
 
 Solutions organized by primary topic folder.
 
-**Solved:** 192
+**Solved:** 193
 
 | Topic | Solved |
 | --- | --- |
-| array | 81 |
+| array | 82 |
 | binary-search | 1 |
 | database | 1 |
 | design | 1 |
