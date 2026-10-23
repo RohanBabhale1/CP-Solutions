@@ -1,32 +1,32 @@
 
 class Solution {
 public:
-    vector<vector<int>> permute(vector<int>& nums) {
-        vector<vector<int>> ans;
-        vector<int> curr;
-        vector<bool> used(nums.size(), false);
+    vector<vector<int>> ans;
+    vector<int> temp;
+    vector<bool> used;
 
-        backtrack(nums, curr, used, ans);
-        return ans;
-    }
-
-    void backtrack(vector<int>& nums, vector<int>& curr,
-                   vector<bool>& used, vector<vector<int>>& ans) {
-        if (curr.size() == nums.size()) {
-            ans.push_back(curr);
+    void solve(vector<int>& nums) {
+        if (temp.size() == nums.size()) {
+            ans.push_back(temp);
             return;
         }
 
         for (int i = 0; i < nums.size(); i++) {
             if (used[i]) continue;
 
+            temp.push_back(nums[i]);
             used[i] = true;
-            curr.push_back(nums[i]);
 
-            backtrack(nums, curr, used, ans);
+            solve(nums);
 
-            curr.pop_back();
+            temp.pop_back();
             used[i] = false;
         }
+    }
+
+    vector<vector<int>> permute(vector<int>& nums) {
+        used.resize(nums.size(), false);
+        solve(nums);
+        return ans;
     }
 };
