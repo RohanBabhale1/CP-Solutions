@@ -1,13 +1,21 @@
 class Solution {
 public:
     int countDaysTogether(string arriveAlice, string leaveAlice, string arriveBob, string leaveBob) {
-        return clamp(min(f(leaveAlice), f(leaveBob)) - max(f(arriveAlice), f(arriveBob)) + 1, 0, 365);
-    }
-
-    int f(auto& s) {
-        int m = (s[0] - '0') * 10 + (s[1] - '0');
-        int q = (s[3] - '0') * 10 + (s[4] - '0');
-
-        return (275 * m) / 9 - 30 - 2 * ((m + 9) / 12) + q;
+        int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        auto convert = [&](string date) {
+            int month = stoi(date.substr(0, 2));
+            int day = stoi(date.substr(3, 2));
+            for (int i = 0; i < month - 1; i++) {
+                day += days[i];
+            }
+            return day;
+        };
+        int a1 = convert(arriveAlice);
+        int a2 = convert(leaveAlice);
+        int b1 = convert(arriveBob);
+        int b2 = convert(leaveBob);
+        int start = max(a1, b1);
+        int end = min(a2, b2);
+        return max(0, end - start + 1);
     }
 };
