@@ -1,14 +1,16 @@
 class Solution {
 public:
     long long maximumTripletValue(vector<int>& nums) {
-        long maxTriplet = 0, maxElement = 0, maxDiff = 0;
-        for (long num : nums) {
-            maxTriplet = max(maxTriplet, maxDiff * num);
-            maxDiff = max(maxDiff, maxElement - num);
-            maxElement = max(maxElement, num);
-            cout<< maxTriplet<<" "<<maxDiff<<" "<<maxElement<<endl;
-            
+        long long ans = 0;
+        int maxi = 0;
+        int maxDiff = 0;
+
+        for (int num : nums) {
+            ans = max(ans, 1LL * maxDiff * num);
+            maxDiff = max(maxDiff, maxi - num);
+            maxi = max(maxi, num);
         }
-        return maxTriplet;
+
+        return ans;
     }
 };
