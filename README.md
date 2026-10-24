@@ -6,7 +6,7 @@ My accepted solutions from LeetCode, Codeforces, AtCoder, CSES and more.
 
 Synced automatically by SolveSync.
 
-**Total solved:** 446
+**Total solved:** 447
 
 ## Codeforces
 
@@ -24,7 +24,7 @@ Solutions by RohanBabhale1, organized by difficulty rating.
 
 Solutions organized by primary topic folder.
 
-**Solved:** 194
+**Solved:** 195
 
 | Topic | Solved |
 | --- | --- |
@@ -36,7 +36,7 @@ Solutions organized by primary topic folder.
 | dynamic-programming | 1 |
 | hash-table | 17 |
 | linked-list | 6 |
-| math | 50 |
+| math | 51 |
 | misc | 8 |
 | stack | 1 |
 | string | 17 |
@@ -194,5 +194,5 @@ Solutions from Repovive contests and practice.
 | contest-27 | 2 |
 | contest-28 | 3 |
 
-*Last updated: 2026-10-23*
+*Last updated: 2026-10-24*
 <!-- solvesync:end -->
